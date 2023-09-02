@@ -37,6 +37,7 @@ function Editor({ socketRef, roomId,onCodeChange }) {
   useEffect(() => {
     init();
   }, []);
+
   useEffect(() => {
     if (socketRef.current) {
       socketRef.current.on(ACTIONS.CODE_CHANGE, ({ code }) => {
