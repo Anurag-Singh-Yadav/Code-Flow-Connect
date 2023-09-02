@@ -13,6 +13,10 @@ function App() {
           path="/editor/:roomId"
           element={<EditorPage></EditorPage>}
         ></Route>
+        <Route
+          path="*"
+          element={<Home></Home>}
+        ></Route>
       </Routes>
       <ToastContainer
         position="top-right"
